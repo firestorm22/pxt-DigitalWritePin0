@@ -1,0 +1,10 @@
+{
+  "name": "DigitalWritePin0",
+  "description": "An extension to write digital 1 to Pin 0.",
+  "dependencies": {
+    "core": "*"
+  },
+  "files": [
+    "main.ts"
+  ]
+}
