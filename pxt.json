@@ -1,6 +1,6 @@
 {
-  "name": "DigitalWritePin0",
-  "description": "An extension to write digital 1 to Pin 0.",
+  "name": "MiddleLED",
+  "description": "An extension to light up the middle LED on the micro:bit.",
   "dependencies": {
     "core": "*"
   },
