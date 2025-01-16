@@ -1,10 +1,18 @@
-//% weight=100 color=#0fbc11 icon="\uf205" block="DigitalWritePin0"
-namespace DigitalWritePin0 {
+//% weight=100 color=#0fbc11 icon="\uf205" block="Middle LED Control"
+namespace MiddleLED {
     /**
-     * Write digital 1 to Pin 0.
+     * Light up the middle LED on the micro:bit
      */
-    //% block="set Pin 0 to digital 1"
-    export function setPin0High(): void {
-        pins.digitalWritePin(DigitalPin.P0, 1);
+    //% block="light up middle LED"
+    export function lightUpMiddle(): void {
+        led.plot(2, 2); // Turn on the middle LED (row 2, column 2)
+    }
+
+    /**
+     * Turn off the middle LED on the micro:bit
+     */
+    //% block="turn off middle LED"
+    export function turnOffMiddle(): void {
+        led.unplot(2, 2); // Turn off the middle LED (row 2, column 2)
     }
 }
